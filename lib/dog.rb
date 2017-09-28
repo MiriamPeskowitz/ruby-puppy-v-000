@@ -11,8 +11,8 @@ attr_accessor :name
     @name = name
     @@all<<self
     # why is this not @@all<<name?? or @@all<<@name
-    # because the name != self, it's just one property 
-    
+    # because the name != self, it's just one property
+
   end
 
   def self.all
