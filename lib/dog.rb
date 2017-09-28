@@ -18,8 +18,3 @@ attr_accessor :name
     @@all.clear
   end
 end
-
-
-
-
-
