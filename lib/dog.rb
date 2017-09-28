@@ -1,11 +1,16 @@
 class Dog
 @@all = []
 attr_accessor :name
+  (def name=(name)
+   @name=name
+ end
+ def name(name)
+   @name)
 
   def initialize(name)
     @name = name
     @@all<<self
-    # why is this not @@all<<name??
+    # why is this not @@all<<name?? or @@all<<@name
   end
 
   def self.all
