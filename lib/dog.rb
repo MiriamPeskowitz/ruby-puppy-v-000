@@ -1,5 +1,5 @@
 class Dog
-@@all = []
+@@all = [] #array of instance objects, with the property name. 
 attr_accessor :name
   (def name=(name)
    @name=name
@@ -11,6 +11,8 @@ attr_accessor :name
     @name = name
     @@all<<self
     # why is this not @@all<<name?? or @@all<<@name
+    # because the name != self, it's just one property 
+    
   end
 
   def self.all
